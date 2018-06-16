@@ -48,8 +48,15 @@ If you use a port other than `8123` or an SSL proxy, change the port number acco
 
 ## {% linkable_title Router configuration %}
 
-You'll need to forward the port you listed in your configuration (8123 in the example above) on your router to your Home Assistant system. You can find guides on how to do this on [Port Forward](https://portforward.com/) - noting that you'll only need to forward the TCP port.
+You'll need to forward the port you listed in your configuration (8123 in the example above) on your router to your Home Assistant system. You can find guides on how to do this on [Port Forward](https://portforward.com/) - noting that you'll only need to forward the TCP port. You will need to forward, port 443 external(public) to 8123 internal(private) to the IP address of your Rasberry Pi. Some routers block port 443, if this haappens just simply change it to port 80
 
 Ensure that you allocate the Home Assistant system a fixed IP on your network before you configure port forwarding. You can do this either on the computer itself (see the [install guide](/hassio/installation/) or via a static lease on your router.
 
 Restart Home Assistant for the configured changes to take effect. When you access the Home Assistant frontend you will now need to use `https`, even when accessing local instances, for example at `https://192.168.0.1:8123`. 
+
+## {% linkable_title Troubleshooting %}
+
+```ERROR: Challenge is invalid!``` = Domain is mistyped or not created
+
+Browser Says:
+```This page isn’t working 192.168.0.27 didn’t send any data```. = You forgot to type https:// before your domain name. You should type ```https://YourDomainName.duckdns.org```
