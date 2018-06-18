@@ -19,9 +19,10 @@ The Google Assistant integration allows users to control the entities via the Ho
 To use this integration, you need to have:
 
  - The cloud component set up. [Learn more](/components/cloud/)
- - A Google Assistant enabled device like the Google Home
- - Activated the Home Assistant Smart Home skill for Google Assistant by using the Google Home app, select *Home control*, and then add *hass.io* using the *Add devices* option.
+ - A Google Assistant enabled device like the Google Home or android 6.0+ phones and tablets
 
+next We will have to activate the Home Assistant Smart Home skill for Google Assistant by opening Google assistant app, tap explore (Blue icon in the top right corner), tap the three vertical dots in the top right corner, tap settings, tap home control, search for hass.io, enter your username and password for your Home Assistant cloud and finally allow access.
+ 
 You can use `configuration.yaml` to configure the entities that are being shown to Google Assistant and how they are exposed.
 
 ```yaml
