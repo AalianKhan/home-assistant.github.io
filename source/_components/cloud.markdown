@@ -25,3 +25,10 @@ Once activated, go to the configuration panel in Home Assistant and create an ac
 ```yaml
 config:
 ```
+Now to setup your username and password for the Home Assiatant cloud.
+1. Go to your Hass.io 
+2. Click the hamburger icon on your left
+3. Click configuration
+4. Click Home Assitant Cloud
+5. Then Create account an enter any email and password that you use
+6. Confirm your email and done
