@@ -18,30 +18,38 @@ Please note, there are two versions of the hub: v1 and v2. v1 can be used with H
 
 ## Supported Devices
 
-- Aqara Air Conditioning Companion (lumi.acpartner.v3)
-- Aqara Intelligent Door Lock (lock.aq1)
-- Aqara Wall Switch (Double)
-- Aqara Wall Switch (Single)
-- Aqara Wall Switch LN (Double)
-- Aqara Wall Switch LN (Single)
-- Aqara Wireless Switch (Double)
-- Aqara Wireless Switch (Single)
-- Battery
+### Gateways
+- Gateway (Internal Light, Illumination Sensor, Ringtone play)
+- Xiaomi Mijia Gateway (lumi.gateway.v2, lumi.gateway.v3)
+
+### Binary Sensors
+- Aqara Wall Switch (Both single & double rocker)
+- Aqara Wall Switch LN (Both single & double rocker)
+- Aqara Wireless Switch (Both single & double rocker)
 - Button 1st generation (Single, Double, Long Click)
 - Button 2nd generation (Single, Double)
-- Cube
-- Door and Window Sensor (1st and 2nd generation)
-- Gas Leak Detector (reports alarm and density)
-- Gateway (Light, Illumination Sensor, Ringtone play)
-- Intelligent Curtain
 - Motion Sensor (1st and 2nd generation)
-- Plug aka Socket (Zigbee version, reports power consumed, power load, state and if the device is in use)
-- Smoke Detector (reports alarm and density)
-- Temperature and Humidity Sensor (1st and 2nd generation)
+- Door and Window Sensor (1st & 2nd generation)
 - Vibration Sensor
-- Wall Plug (reports power consumed, power load, and state)
 - Water Leak Sensor
-- Xiaomi Mijia Gateway (lumi.gateway.v2, lumi.gateway.v3)
+- Smoke Detector (reports alarm and density)
+- Gas Leak Detector (reports alarm and density)
+- Cube
+
+### Sensors
+- Battery
+- Temperature and Humidity Sensor (1st and 2nd generation)
+
+### Other devices
+- Aqara Air Conditioning Companion (lumi.acpartner.v3)
+- Aqara Intelligent Door Lock
+    - `changed_by` Provides the user/key ID of the last successful unlock.
+    - `verified_wrong_times` when the device receives 3 failed attempts the attribute will be incremented. The counter resets on a successful unlock.
+- Intelligent Curtain
+- Plug aka Socket (Zigbee version, reports power consumed, power load, state and if the device is in use)
+- Wall Plug (reports power consumed, power load, and state)
+
+
 
 ## Unsupported Devices
 
